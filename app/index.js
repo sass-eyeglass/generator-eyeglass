@@ -133,13 +133,13 @@ module.exports = yeoman.generators.Base.extend({
     },
 
     askSass: function() {
-      var done = this.async;
+      var done = this.async();
 
       var prompts = [{
         type: 'list',
         name: 'sassType',
         message: 'Would you like to use the .scss or .sass syntax?',
-        choices: ['sass', 'scss'],
+        choices: ['scss', 'sass'],
         default: 'scss'
       }];
 
