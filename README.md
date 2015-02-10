@@ -1,4 +1,6 @@
-# Sass Eyeglass Yeoman Generator [![Build Status](https://secure.travis-ci.org/iamcarrico/generator-eyeglass.png?branch=master)](https://travis-ci.org/iamcarrico/generator-eyeglass)
+# Sass Eyeglass Yeoman Generator
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![License MIT][license-image]][license-url] [![Downloads][downloads-image]][npm-url]
 
 > [Yeoman](http://yeoman.io) generator
 
@@ -42,3 +44,14 @@ yo eyeglass
 ## License
 
 MIT
+
+
+[travis-url]: https://travis-ci.org/iamcarrico/generator-eyeglass
+[travis-image]: http://img.shields.io/travis/iamcarrico/generator-eyeglass.svg
+
+[downloads-image]: http://img.shields.io/npm/dm/generator-eyeglass.svg
+[npm-url]: https://npmjs.org/package/generator-eyeglass
+[npm-image]: http://img.shields.io/npm/v/generator-eyeglass.svg
+
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg
+[license-url]: https://github.com/iamcarrico/generator-eyeglass/blob/master/LICENSE
