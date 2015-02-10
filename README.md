@@ -1,4 +1,4 @@
-# generator-eyeglass [![Build Status](https://secure.travis-ci.org/iamcarrico/generator-eyeglass.png?branch=master)](https://travis-ci.org/iamcarrico/generator-eyeglass)
+# Sass Eyeglass Yeoman Generator [![Build Status](https://secure.travis-ci.org/iamcarrico/generator-eyeglass.png?branch=master)](https://travis-ci.org/iamcarrico/generator-eyeglass)
 
 > [Yeoman](http://yeoman.io) generator
 

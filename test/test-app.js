@@ -12,6 +12,7 @@ describe('eyeglass:app', function () {
     mockery.registerMock('github', function () {
       return {
         user: {
+          /* jshint -W106 */
           getFrom: function (data, cb) {
             cb(null, JSON.stringify({
               name: 'Tyrion Lannister',
@@ -19,6 +20,7 @@ describe('eyeglass:app', function () {
               html_url: 'https://github.com/imp'
             }));
           }
+          /* jshint +W106 */
         }
       };
     });

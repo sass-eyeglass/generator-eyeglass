@@ -1,6 +1,6 @@
 {
   "name": "generator-eyeglass",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A Yeoman generator to create a custom eyeglass module for Sass.",
   "license": "MIT",
   "main": "app/index.js",
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "mocha": "*",
+    "mocha-jshint": "0.0.9",
     "mockery": "^1.4.0"
   },
   "peerDependencies": {

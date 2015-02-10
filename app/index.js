@@ -1,10 +1,10 @@
 'use strict';
 var path = require('path');
 var yeoman = require('yeoman-generator');
+var url = require('url');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var npmName = require('npm-name');
-var superb = require('superb');
 var _ = require('lodash');
 var _s = require('underscore.string');
 
@@ -47,11 +47,13 @@ if (process.env.GITHUB_TOKEN) {
   });
 }
 
+/* jshint -W106 */
 var emptyGithubRes = {
   name: '',
   email: '',
   html_url: ''
 };
+/* jshint +W106 */
 
 var githubUserInfo = function (name, cb, log) {
   github.user.getFrom({
