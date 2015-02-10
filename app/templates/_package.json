@@ -1,9 +1,20 @@
 {
-  "name": "package",
+  "name": "<%= slugAppname %>",
   "version": "0.0.0",
+  "description": "Sass eyeglass module",
+  "license": "MIT",
+  "repository": "<%= githubUser %>/<%= slugAppname %>",
+  "author": {
+    "name": "<%= realname %>",
+    "email": "<%= email %>",
+    "url": "<%= githubUrl %>"
+  },
+  "files": [
+    "sass"
+  ],
+  "keywords": ["eyeglass-module", "sass"],
+  "main": "eyeglass-exports.js",
   "dependencies": {
     "sass-eyeglass": "*"
-  },
-  "keywords": ["eyeglass-module", "sass"],
-  "main": "eyeglass-exports.js"
+  }
 }
