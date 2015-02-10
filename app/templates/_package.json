@@ -1,5 +1,9 @@
 {
   "name": "package",
   "version": "0.0.0",
-  "dependencies": {}
+  "dependencies": {
+    "sass-eyeglass": "*"
+  },
+  "keywords": ["eyeglass-module", "sass"],
+  "main": "eyeglass-exports.js"
 }

@@ -13,18 +13,19 @@ module.exports = yeoman.generators.Base.extend({
 
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the mathematical' + chalk.red('Eyeglass') + ' generator!'
+      'Welcome to the ' + chalk.magenta('Sass Eyeglass') + ' generator!'
     ));
 
     var prompts = [{
-      type: 'confirm',
-      name: 'someOption',
-      message: 'Would you like to enable this option?',
-      default: true
+      type: 'list',
+      name: 'sassType',
+      message: 'Would you like to use the .scss or .sass syntax?',
+      choices: ['sass', 'scss'],
+      default: 'scss'
     }];
 
     this.prompt(prompts, function (props) {
-      this.someOption = props.someOption;
+      this.sassType = props.sassType;
 
       done();
     }.bind(this));
@@ -36,10 +37,6 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('_package.json'),
         this.destinationPath('package.json')
       );
-      this.fs.copy(
-        this.templatePath('_bower.json'),
-        this.destinationPath('bower.json')
-      );
     },
 
     projectfiles: function () {
@@ -50,6 +47,11 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('jshintrc'),
         this.destinationPath('.jshintrc')
+      );
+
+      this.fs.copy(
+        this.templatePath('sass.' + this.sassType),
+        this.destinationPath('sass/index.' + this.sassType)
       );
     }
   },

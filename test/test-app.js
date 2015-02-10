@@ -18,10 +18,10 @@ describe('eyeglass:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'bower.json',
       'package.json',
       '.editorconfig',
-      '.jshintrc'
+      '.jshintrc',
+      'sass/index.scss'
     ]);
   });
 });
