@@ -45,6 +45,7 @@ describe('eyeglass:app', function () {
       'package.json',
       '.editorconfig',
       '.jshintrc',
+      'eyeglass-exports.js',
       'sass/index.scss'
     ]);
   });
