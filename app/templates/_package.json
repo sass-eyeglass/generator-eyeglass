@@ -15,6 +15,6 @@
   "keywords": ["eyeglass-module", "sass"],
   "main": "eyeglass-exports.js",
   "dependencies": {
-    "sass-eyeglass": "*"
+    "eyeglass": "*"
   }
 }
